@@ -1,0 +1,33 @@
+#container
+{
+    width: 100%;
+    height: 600px;
+    /*background-color: red;*/
+    margin: auto;
+}
+
+.navbar-brand img
+{
+    width: 100px;
+}
+#button_green
+{
+    color: #25a342
+    
+}
+
+
+.carousel-item
+{
+    opacity: .8;
+}
+
+#cards
+{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+}
+
+
+
