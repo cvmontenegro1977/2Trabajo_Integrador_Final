@@ -38,6 +38,28 @@ function total_a_pagar()
         return ;
     }
 
+    if(mail.value==="")
+    {
+        alert("Escribir apellido...");
+        mail.classList.add("is-invalid");
+        mail.focus();
+        return ;
+    }
+
+     // Para determinar si el correo electrónico es válido o no
+     const emailValido = mail => 
+     {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
+     }
+
+     if(!emailValido(mail.value))
+     {
+        alert("Escribir bien el mail...");
+        mail.classList.add("is-invalid");
+        mail.focus();
+        return ;
+     }
+
     
 
     if( (cantidadTickets.value<=0) || (isNaN(cantidadTickets.value)))
